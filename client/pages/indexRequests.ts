@@ -12,3 +12,20 @@ export const validateToken = async (token: string) => {
       throw new Error('Token validation failed');
     }
   };
+
+  export const uploadFile = async (file: string | Blob) => {
+    const formData = new FormData();
+    formData.append('file', file);
+  
+    await fetch('http://localhost:8080/api/v1/upload', {
+      method: 'POST',
+      body: formData,
+    });
+  };
+
+
+  export const fetchUploadedFiles = async () => {
+    const response = await fetch('http://localhost:8080/api/v1/uploads');
+    const files = await response.json();
+    return files;
+  };
