@@ -54,3 +54,5 @@ router.post('/api/v1/upload', upload.single('file'), async(req, res) => {
       }
     });
   })
+
+  export default router
