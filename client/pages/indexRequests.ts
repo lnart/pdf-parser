@@ -27,6 +27,7 @@ export const validateToken = async (token: string) => {
   export const fetchUploadedFiles = async () => {
     const response = await fetch('http://localhost:8080/api/v1/uploads');
     const files = await response.json();
+    console.log(files)
     return files;
   };
 
