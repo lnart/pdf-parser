@@ -35,3 +35,22 @@ router.post('/api/v1/upload', upload.single('file'), async(req, res) => {
       res.status(500).send('Error reading files');
     }
   });
+
+
+  router.delete("/api/v1/delete/:filename", (req, res) => {
+    const filename = req.params.filename;
+    const filePath = path.join(uploadsdir, filename);
+  
+    fs.unlink(filePath, (err) => {
+      if (err) {
+        if (err.code === 'ENOENT') {
+          res.status(404).json({ message: 'File not found' });
+        } else {
+          console.error('Error deleting file:', err);
+          res.status(500).json({ message: 'Error deleting file' });
+        }
+      } else {
+        res.status(200).json({ message: 'File deleted successfully' });
+      }
+    });
+  })
