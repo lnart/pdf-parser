@@ -4,7 +4,7 @@ import fs from 'fs'
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, '/Users/lennartp./pdf-upload-parser/server/src/uploads');
+      cb(null, '/Users/lennartp./pdf-upload-parser/server/src/multerConfig/uploads');
     },
     filename: function (req, file, cb) {
       if (!file.originalname) {
