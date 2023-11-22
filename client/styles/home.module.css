@@ -1,0 +1,83 @@
+.homecontainer body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    color: black;
+  }
+  
+  .header {
+    background-color: #6054f4;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .fileInputContainer,
+  .filesListContainer {
+    background-color: #f0f0f0; 
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .homecontainerButton {
+    background-color: #6054f4; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .logoutButton {
+    background-color: #6054f4; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    width: 20%;
+    margin-top: 10px;
+  }
+  
+  .homecontainer button:hover {
+    background-color: #5044c4; 
+  }
+  
+  .notification-bar {
+    color: white;
+    background-color: red;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .homecontainer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .homecontainer li {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #eaeaea;
+    border-radius: 3px;
+  }
+  
