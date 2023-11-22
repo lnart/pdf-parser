@@ -26,7 +26,7 @@ const Login = () => {
           if(res.ok){
               const token = await res.json()
               Cookies.set('token', token, {expires: 1})
-              router.push("/home")
+              router.push("/")
           }else if(res.status === 401){
               setInvalidCredentials(true)
           }
