@@ -1,0 +1,56 @@
+.loginContainer {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.loginContainer h2 {
+    color: #6054f4;
+    text-align: center;
+}
+
+.inputGroup {
+    margin-bottom: 15px;
+}
+
+.inputGroup label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputGroup input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.loginContainer button {
+    background-color: #6054f4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.LoginContainer button:hover {
+    background-color: #5044c4;
+}
+
+.errorMessage {
+    color: red;
+    background-color: #ffdada;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
