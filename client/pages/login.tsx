@@ -12,7 +12,7 @@ const Login = () => {
     const handleSubmit = async(event: { preventDefault: () => void; }) => {
       event.preventDefault();
       try {
-          const res = await fetch("http://localhost:8090/api/v1/login", {
+          const res = await fetch("http://localhost:8080/api/v1/login", {
               method: 'POST',
               headers: {
                   'Accept': 'application/json',
