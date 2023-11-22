@@ -29,3 +29,10 @@ export const validateToken = async (token: string) => {
     const files = await response.json();
     return files;
   };
+
+  export const deleteFile = async (filename: string) => {
+    await fetch(`http://localhost:8080/api/v1/delete/${filename}`, {
+      method: 'DELETE',
+    });
+  };
+  
