@@ -26,6 +26,7 @@ const UploadPage = () => {
 
     validateToken(token)
       .then((isValid: any) => {
+        fetchUploadedFiles().then(setUploadedFiles);
         if (!isValid) {
           throw new Error('Invalid token');
         }
