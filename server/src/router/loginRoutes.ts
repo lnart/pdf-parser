@@ -28,3 +28,5 @@ router.post("/api/v1/validate-token", (req, res) => {
       res.status(401).json({meessage:"token is invalid"})
     }
   })
+
+  export default router
